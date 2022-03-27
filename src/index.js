@@ -8,6 +8,9 @@
 */
 const introContent = document.querySelector("#intro-content");
 const introTextContent = document.querySelector("#intro-text-content");
+const introHello = document.querySelector("#intro-hello");
+const enterSite = document.querySelector("#enter-site");
+
 var timePerLetter = 35,
     text = document.createTextNode('')
     textContentCopy = introTextContent.textContent,
@@ -36,13 +39,20 @@ function printOut(str) {
 printOut(textContentCopy);
 
 const entryError = document.getElementById("intro-footer"),
-    enterSite = document.getElementById("enter-site");
+    runScript = document.getElementById("intro-run-script");
 
-enterSite.addEventListener("click", () => {
+function enterPortfolio(siteOpened=siteOpened) {
     if (siteOpened) {
         introContent.style = "visibility: hidden";
+        introHello.style = "visibility: normal";
+        enterSite.style = "visibility: normal";
+        document.body.style = "background-image: url(../imgs/intro-bg.png);"
     } else {
         entryError.style = "visibility: normal";
     };
+}
+
+runScript.addEventListener("click", () => {
+    enterPortfolio(siteOpened);
 });
 

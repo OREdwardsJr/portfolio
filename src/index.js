@@ -1,15 +1,9 @@
-/* 
-    • Page Loads
-    • | blinks 3 times
-    • Typing commences
-    • Add typo where it goes back to fix itself
-    • Launches "Hello World"
-    • Transitions into website
-*/
 const introContent = document.querySelector("#intro-content");
 const introTextContent = document.querySelector("#intro-text-content");
 const introHello = document.querySelector("#intro-hello");
 const enterSite = document.querySelector("#enter-site");
+const introSection = document.querySelectorAll(".intro-section");
+const skipIntro = document.querySelector("#skip-intro");
 
 var timePerLetter = 35,
     text = document.createTextNode('')
@@ -56,3 +50,12 @@ runScript.addEventListener("click", () => {
     enterPortfolio(siteOpened);
 });
 
+function hideIntro() {
+    for (let i = 0; i < introSection.length; i++) {
+        introSection[i].style = "visibility: hidden";
+    }
+    document.body.style = "background-image: none";
+}
+
+enterSite.addEventListener("click", () => hideIntro());
+skipIntro.addEventListener("click", () => hideIntro());

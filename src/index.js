@@ -4,6 +4,7 @@ const introHello = document.querySelector("#intro-hello");
 const enterSite = document.querySelector("#enter-site");
 const introSection = document.querySelectorAll(".intro-section");
 const skipIntro = document.querySelector("#skip-intro");
+const masterContainer = document.querySelector("#master-container");
 
 var timePerLetter = 35,
     text = document.createTextNode('')
@@ -52,10 +53,15 @@ runScript.addEventListener("click", () => {
 
 function hideIntro() {
     for (let i = 0; i < introSection.length; i++) {
-        introSection[i].style = "visibility: hidden";
+        introSection[i].style = "visibility: hidden;";
     }
-    document.body.style = "background-image: none";
+    document.body.style = "background-image: none;";
+    masterContainer.style = "visibility: normal;"
 }
 
 enterSite.addEventListener("click", () => hideIntro());
 skipIntro.addEventListener("click", () => hideIntro());
+
+// Testing - Hides intro
+let testing = true;
+if (testing) hideIntro();

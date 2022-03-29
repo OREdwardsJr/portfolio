@@ -74,5 +74,5 @@ launchContactPage.addEventListener("click", () => {
     );
 
 // Testing - Hides intro
-let testing = true;
+let testing = false;
 if (testing) hideIntro();

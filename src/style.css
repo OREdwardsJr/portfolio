@@ -246,7 +246,7 @@ a {
 #modal-section {
     display: grid;
     grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     height: 62vh;
     width: 38vw;
     z-index: 1;
@@ -263,10 +263,14 @@ a {
 #modal-submit-div {
     display: flex;
     place-content: flex-end;
-    padding-right: 43px;
 }
 
 #submit-message {
-    height: min-content;
-    width: 5vw;
+    height: 4vh;
+    width: 8vw;
+}
+
+.user-entries {
+    width: 24vw;
+    height: 3vh;
 }

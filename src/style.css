@@ -88,7 +88,7 @@ body {
 
 #master-container {
     display: grid;
-    grid-template-rows: 3fr 0fr 3fr 0fr 6fr auto;
+    grid-template-rows: 3fr 0fr 3fr 0fr 6fr 0fr 3fr auto;
     height: 100vh;
     position: absolute;
     background-color: aliceblue;
@@ -180,6 +180,11 @@ body {
     place-content: center;
 }
 
+#languages-img {
+    height: 6vh;
+    margin-left: 15px;
+}
+
 #projects-container {
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -199,8 +204,12 @@ body {
 }
 
 #projects-display-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    place-content: center;
+}
+
+#projects-display-container h1, h2 {
+    text-align: center;
 }
 
 .project-containers {
@@ -217,4 +226,19 @@ body {
 .project-thumbs {
     height: 32vh;
     place-self: center;
+    cursor: pointer;
+}
+
+a {
+    width: min-content;
+    height: min-content;
+    cursor: pointer;
+}
+
+#contact-me-footer {
+    display: grid;
+    place-content: center;
+    background-color: #1b1b1e;
+    color: var(--secondary-color);
+    cursor: pointer;
 }

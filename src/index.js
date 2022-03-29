@@ -62,6 +62,9 @@ function hideIntro() {
 enterSite.addEventListener("click", () => hideIntro());
 skipIntro.addEventListener("click", () => hideIntro());
 
+
+// Pop-up Modal
+
 // Testing - Hides intro
-let testing = false;
+let testing = true;
 if (testing) hideIntro();

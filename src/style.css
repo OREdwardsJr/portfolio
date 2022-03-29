@@ -260,6 +260,12 @@ a {
     padding: 15px;
 }
 
+#modal-submit-div {
+    display: flex;
+    place-content: flex-end;
+    padding-right: 43px;
+}
+
 #submit-message {
     height: min-content;
     width: 5vw;

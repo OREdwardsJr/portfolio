@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/style.css">
+    
+  </head>
+  <body style="overflow: hidden;">
+      <div id="intro-content" class="intro-section">
+        <p id="intro-text-content">
+          |d|e|f| |s|a|y|_|h|e|l|l|o(|)|:| <br>
+          |&nbsp; &nbsp;| &nbsp; &nbsp; |p|r|i|n|t|(|"|H|e|l|l|o| |W|o|r|l|d|"|)| <br>
+          <br>
+          |i|f| |_|_|n|a|m|e|_|_| |=|=| |"|_|_|m|a|i|n|_|_|"|:| <br>
+          |&nbsp; &nbsp; |&nbsp; &nbsp;|s|a|y|_|h|e|l|l|o(|)
+        </p>
+        <button id="intro-run-script">RUN SCRIPT</button>
+        <div id="intro-footer" style="visibility: hidden;">Traceback Error: say_hello() is not defined. Please, try again when typing finishes.</div>
+      </div>
+      <h1 id="intro-hello" style="visibility: hidden;" class="intro-section">Hello World</h1>
+      <div id="enter-site" style="visibility: hidden;" class="intro-section">ENTER SITE</div>
+      <h5 id="skip-intro" class="intro-section">SKIP INTRO</h5>
+
+    <div id="master-container" style="visibility: hidden;">
+      <div id="top-nav-container">
+        <div id="left-container">
+          <div id="about-me-intro">
+            <p id="about-me-text"><span id="emphasis-text">Orlando Edwards Jr</span>
+              <img src="../imgs/languages.png" alt="languages" id="languages-img"><br>
+             <span id="emphasis-text2">FULL STACK ENGINEER</span>
+            </p>
+          </div>
+        </div>
+        <div id="right-container">
+          <div id="socials-area">
+            <div class="socials-avatar">
+              <a href="https://github.com/OREdwardsJr" target="_blank" rel="noopener noreferrer"><img src="../imgs/github.png" alt="github"></a>
+            </div>
+            <div class="socials-avatar">
+             <a href="https://www.linkedin.com/in/orlando-edwards-jr/" target="_blank" rel="noopener noreferrer"><img src="../imgs/linkedin.png" alt="" style="height: 7vh; width: auto;"></a> 
+            </div>
+            <div class="socials-avatar">
+              <a href="https://discord.gg/NrJyxXQgdz" target="_blank" rel="noopener noreferrer"><img src="../imgs/discord.png" alt="" style="height: 7vh; width: auto;"></a>
+            </div>
+          </div>
+          <div id="avatar-area" style="display: grid; place-content: center;">
+            <img src="../imgs/avatar.png" alt="avatar" id="avatar" style="object-fit: scale-down;">
+          </div>
+        </div>
+      </div>
+      <div class="blank-div" style="height: 4vh;"></div>
+      <div id="language-contact-container">
+        <!-- You'll need to probably divide the lower sections when you start adding links-->
+        <h1 style="color: var(--secondary-color); place-self: center; font-size: 5vh;">ETCH-A-SKETCH (JS) | ALGORITHMS (Python) | ABOUT ME</h1>
+      </div>
+      <div class="blank-div" style="height: 4vh;"></div>
+      <div id="projects-container">
+        <div id="projects-title-div">
+          <h1 id="projects-title">VIEW MY PROJECTS</h1>
+        </div>
+        <div id="projects-display-container">
+          <div class="project-containers">
+            <div id="project1" class="projects">
+              <a href="https://github.com/OREdwardsJr/MyWordle" target="_blank" rel="noopener noreferrer"><img src="../imgs/project-1.png" alt="mywordle-python" class="project-thumbs"></a>
+            </div>
+            <h1 style="color: var(--primary-color);">MY-WORDLE</h1>
+          </div>
+          <div class="project-containers">
+            <div id="project2" class="projects">
+              <a href="https://github.com/OREdwardsJr/Coin_Tracker" target="_blank" rel="noopener noreferrer"><img src="../imgs/project2.png" alt="crypto-project" class="project-thumbs"></a>
+            </div>
+            <h2 style="width: min-content; color: var(--primary-color)">CRYPTOCURRENCY TRACKER</h2>
+          </div>
+          <div class="project-containers">
+            <div id="project3" class="projects">
+              <a href="https://github.com/OREdwardsJr/job-scraping-bot" target="_blank" rel="noopener noreferrer"><img src="../imgs/project3.png" alt="job-scraper" class="project-thumbs"></a>
+            </div>
+            <h2 style="color: var(--primary-color)">JOB SCRAPER</h2>
+          </div>
+        </div>
+      </div>
+      <div class="blank-div" style="height: 4vh;"></div>
+      <div id="contact-me-footer"><h1 id="contact-me-launch">CONTACT ME</h1></div>
+      <div class="blank-div" style="height: 4vh;"></div>
+    </div>
+    <div id="modal-section">
+      <div>
+        <h5>Name</h5>
+        <input type="text" class="user-entries">
+      </div>
+      <div>
+        <h5>e-Mail</h5>
+        <input type="text" class="user-entries">
+      </div>
+      <div>
+        <h5>Message</h5>
+        <textarea id="modal-input" style="width: 100%; height: 39vh;"></textarea>
+      </div>
+      <div id="modal-submit-div"><button id="submit-message">Submit</button></div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <script src="../src/index.js" async defer></script>
+  </body>
+</html>

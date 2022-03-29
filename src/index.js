@@ -63,5 +63,5 @@ enterSite.addEventListener("click", () => hideIntro());
 skipIntro.addEventListener("click", () => hideIntro());
 
 // Testing - Hides intro
-let testing = true;
+let testing = false;
 if (testing) hideIntro();

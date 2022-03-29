@@ -152,6 +152,7 @@ body {
     display: grid;
     box-shadow: -2px 65px 0px 1px var(--secondary-color);
     background-color: #1b1b1e;
+    height: 13vh;
 }
 
 #projects-container {
@@ -177,4 +178,43 @@ body {
 
 .socials-avatar {
     place-content: center;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding-top: 31px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+#projects-title-div {
+    display: grid;
+    place-content: center;
+}
+
+#projects-title {
+    color: var(--primary-color);
+    font-size: 8vh;
+}
+
+#projects-display-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-containers {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    height: 41vh;
+    margin-right: 30px;
+}
+
+.projects {
+    display: grid;
+}
+
+.project-thumbs {
+    height: 32vh;
+    place-self: center;
 }

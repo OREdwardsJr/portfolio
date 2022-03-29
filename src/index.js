@@ -64,6 +64,14 @@ skipIntro.addEventListener("click", () => hideIntro());
 
 
 // Pop-up Modal
+const launchContactPage = document.querySelector("#contact-me-launch"),
+    contactModal = document.querySelector("#modal-section");
+
+launchContactPage.addEventListener("click", () => {
+    contactModal.style = "visibility: visible;";
+    window.scroll(0,0);
+}
+    );
 
 // Testing - Hides intro
 let testing = true;

@@ -105,7 +105,6 @@ body {
     place-content: center;
 }
 
-
 #about-me-text {
     color: var(--primary-color);
     font-size: medium;
@@ -139,9 +138,8 @@ body {
 }
 
 #top-nav-container #right-container {
-    display: grid;
-    /*! grid-template-rows: 4fr 1fr; */
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    gap: 2vw;
 }
 
 #socials-area {

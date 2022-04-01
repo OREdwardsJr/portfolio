@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+   /* background-color: var(--background-color); */
+    --primary-color: #f1f1f1;
+    --secondary-color: #e24242;
+    /*--accent-color: #2e2e30; */
+    --accent-color: #acacb5;
+    --background-color: #19191a;  
+}
+
+#main-container {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+#main-container {
+    color: var(--primary-color);
+    font-size: xx-large;
+}

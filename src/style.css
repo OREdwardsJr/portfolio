@@ -129,10 +129,13 @@ body {
 
 #top-nav-container {
     display: grid;
-    box-shadow: 2px 115px 0px 1px var(--secondary-color);
+    /*! box-shadow: 2px 115px 0px 1px var(--secondary-color); */
     background-color: #1b1b1e;
     grid-template-columns: 7fr 3fr;
     padding-top: 3vh;
+    border-radius: 20px;
+    border: 4px dashed var(--secondary-color);
+    padding-bottom: 20px;
 }
 
 #top-nav-container #right-container {
@@ -149,15 +152,41 @@ body {
 }
 
 #language-contact-container {
-    display: grid;
-    box-shadow: -2px 65px 0px 1px var(--secondary-color);
+    display: flex;
+    /*! box-shadow: -2px 65px 0px 1px var(--secondary-color); */
     background-color: #1b1b1e;
     height: 13vh;
+    gap: 2vw;
+    place-content: center;
+    border: 1px solid #393939;
+    border-radius: 15px;
+}
+
+.features-container {
+    display: grid;
+    place-items: center;
+    /*! border-right: 3px solid var(--primary-color); */
+    /*! border-radius: 17px; */
+    width: 31%;
+}
+
+.site-features {
+    color: var(--secondary-color);
+    place-self: center;
+    font-size: 5vh;
+}
+
+.site-features a {
+    color: var(--primary-color);
+}
+
+.site-features a:hover{
+    color: var(--secondary-color);
 }
 
 #projects-container {
     display: grid;
-    box-shadow: 2px 65px 0px 1px var(--secondary-color);
+    /*! box-shadow: 2px 65px 0px 1px var(--secondary-color); */
     background-color: #1b1b1e;
 }
 
@@ -187,10 +216,14 @@ body {
 
 #projects-container {
     display: grid;
-    grid-template-rows: 1fr 4fr;
-    padding-top: 31px;
-    padding-left: 43px;
-    padding-right: 43px;
+    grid-template-rows: 1.25fr 4fr;
+    /*! padding-top: 31px; */
+    /*! padding-left: 43px; */
+    /*! padding-right: 43px; */
+    border: 1px solid #393939;
+    border-radius: 19px;
+    height: 58vh;
+    place-content: center;
 }
 
 #projects-title-div {
@@ -241,6 +274,12 @@ a {
     background-color: #1b1b1e;
     color: var(--secondary-color);
     cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    border-radius: 9px;
+    width: 25vw;
+    height: 9vh;
+    display: grid;
+    place-self: center;
 }
 
 #modal-section {

@@ -70,9 +70,15 @@ const launchContactPage = document.querySelector("#contact-me-launch"),
 launchContactPage.addEventListener("click", () => {
     contactModal.style = "visibility: visible;";
     window.scroll(0,0);
+    modalActive = true
 }
     );
+window.addEventListener("click", (e) => {
+    if (e.target == contactModal && modalActive == true) {
+        contactModal.style = "visibility: hidden;";
+    }
+})
 
 // Testing - Hides intro
-let testing = false;
+let testing = true;
 if (testing) hideIntro();

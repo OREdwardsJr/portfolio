@@ -282,15 +282,26 @@ a {
 
 #modal-section {
     display: grid;
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+    display: grid;
     grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr;
     background-color: var(--accent-color);
     height: 62vh;
     width: 38vw;
-    z-index: 1;
+    z-index: 2;
     top: 22vh;
     position: absolute;
     left: 30vw;
-    visibility: hidden;
     border: 2px dashed;
     box-shadow: 0rem 0.5rem 0.75rem black;
     border-radius: 10px;

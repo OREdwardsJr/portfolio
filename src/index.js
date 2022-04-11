@@ -80,5 +80,5 @@ window.addEventListener("click", (e) => {
 })
 
 // Testing - Hides intro
-let testing = true;
+let testing = false;
 if (testing) hideIntro();
